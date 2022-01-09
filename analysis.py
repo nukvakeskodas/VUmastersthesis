@@ -199,7 +199,7 @@ probs14 = probabilities(iteration_file_clean1,op_sol,N=10000)
 probs24 = probabilities(iteration_file_clean2,op_sol,N=10000)
 probs10000 = merge_both_tables(probs14,probs24)
 
-class SeaofBTCapp(tk.Tk):
+class AnalysisAPP(tk.Tk):
 
     def __init__(self, *args, **kwargs):
         
@@ -505,5 +505,5 @@ class Probability_error10000(tk.Frame):
         canvas._tkcanvas.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
         
         
-app = SeaofBTCapp()
+app = AnalysisAPP()
 app.mainloop()
